@@ -14,17 +14,17 @@ import ticket from "../../Resources/images/ticket.webp";
 import device from "../../Resources/images/device.webp";
 import chat from "../../Resources/images/chat.webp";
 import logo from "../../Resources/images/logo.gif";
-import footer1 from "../../Resources/images/footer1.svg";
+import footer1 from "../../Resources/images/footer1.png";
 import footer2 from "../../Resources/images/footer2.png";
 import footer3 from "../../Resources/images/footer3.png";
-import footer4 from "../../Resources/images/footer4.png";
-import footer5 from "../../Resources/images/footer5.svg";
-import footer6 from "../../Resources/images/footer6.png";
+import footer4 from "../../Resources/images/footer4.svg";
+import footer5 from "../../Resources/images/footer5.png";
+import footer6 from "../../Resources/images/footer6.svg";
 
 const Footer = () => {
   return (
     <div className="flex flex-col relative w-full h-[500px] border-t place-items-center">
-      <div className="flex justify-around w-[70%] mt-10 h-32 border-b justify-center">
+      <div className="flex justify-around w-[55%] mt-10 h-32 border-b justify-center">
         <Acheivment
           title="رتبه یک سفر"
           text="معتبرترین عرضه‌کننده محصولات گردشگری در ایران"
@@ -40,8 +40,9 @@ const Footer = () => {
           text="پشتیبانی و همراهی ۲۴ ساعته در تمامی مراحل سفر"
           image={chat}
         />
+        
       </div>
-      <div className="flex w-[70%] h-60 border-b mt-[2rem]">
+      <div className="flex w-[55%] h-60 border-b mt-[2rem]">
         <div className="w-[50%]">
           <div className="flex justify-around w-full">
             <FooterNav
@@ -117,7 +118,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center w-[70%] h-20 text-gray-500">
+      <div className="flex justify-between items-center w-[55%] h-20 text-gray-500">
         <p className="text-[0.7rem]">
           کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به
           شرکت سفرهای علی‌بابا می‌باشد. (نسخه 2.36.3)

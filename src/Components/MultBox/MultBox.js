@@ -26,7 +26,7 @@ const MultBox = ({ Data, onClick, onChange }) => {
       <div>
         <button
           onClick={onClick}
-          className="mb-4 px-16 py-2 bg-orange-300 rounded hover:bg-orange-400 shadow-lg"
+          className="mb-4 px-16 py-2 bg-amber-200 rounded hover:bg-amber-300 shadow-md"
         >
           محاسبه
         </button>

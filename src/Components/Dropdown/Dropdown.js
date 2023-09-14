@@ -1,26 +1,27 @@
 import { Fragment } from "react";
 import { Menu, Transition } from "@headlessui/react";
 import { GoChevronDown } from "react-icons/go";
-import styles from "./Menu.module.css";
+import styles from "./Dropdown.module.css";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-const Dropdown = ({ title, options }) => {
+const Dropdown = ({ title, options , lastChild }) => {
   return (
-    <Menu as="div" className="relative inline-block text-left">
-      <div>
-        <Menu.Button className="inline-flex w-full justify-center gap-x-1.5 px-3 py-2 text-sm font-semibold text-gray-500 hover:bg-gray-50 rounded-md">
-          {title}
-          {options.length !== 0 && (
-            <GoChevronDown
-              className="mr-1 h-5 w-5 text-gray-500"
-              aria-hidden="true"
-            />
-          )}
-        </Menu.Button>
-      </div>
+    <Menu
+      as="div"
+      className={`relative inline-block text-left px-3 text-red-200 ${!lastChild && "border-l border-slate-200"}`}
+    >
+      <Menu.Button className="inline-flex w-full justify-center gap-x-1 px-3 py-2 text-sm font-semibold text-gray-500 hover:bg-gray-50 rounded-md">
+        {title}
+        {options.length !== 0 && (
+          <GoChevronDown
+            className="mr-1 h-5 w-5 text-gray-500"
+            aria-hidden="true"
+          />
+        )}
+      </Menu.Button>
 
       {options.length !== 0 && (
         <Transition
