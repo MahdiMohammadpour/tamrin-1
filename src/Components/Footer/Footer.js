@@ -24,7 +24,7 @@ import footer6 from "../../Resources/images/footer6.svg";
 const Footer = () => {
   return (
     <div className="flex flex-col relative w-full h-[500px] border-t place-items-center">
-      <div className="flex justify-around w-[55%] mt-10 h-32 border-b justify-center">
+      <div className="flex justify-around w-[70%] mt-10 h-32 border-b justify-center">
         <Acheivment
           title="رتبه یک سفر"
           text="معتبرترین عرضه‌کننده محصولات گردشگری در ایران"
@@ -40,11 +40,10 @@ const Footer = () => {
           text="پشتیبانی و همراهی ۲۴ ساعته در تمامی مراحل سفر"
           image={chat}
         />
-        
       </div>
-      <div className="flex w-[55%] h-60 border-b mt-[2rem]">
-        <div className="w-[50%]">
-          <div className="flex justify-around w-full">
+      <div className="flex  w-[70%] h-60 border-b mt-[2rem]">
+        <div className="w-[60%]">
+          <div className="flex justify-between w-full">
             <FooterNav
               title="علی بابا"
               options={[
@@ -77,15 +76,13 @@ const Footer = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col  w-[40%] mr-[3rem] mb-[1rem]">
+        <div className="flex flex-col mr-[3%] pr-[3%] w-[70%]  mb-[1rem]">
           <div>
             <img src={logo} className="w-[8rem] " />
           </div>
-          <div className="mt-[1rem]">
-            <p className="text-slate-600 text-[0.8rem] font-semibold">
-              تلفن پشتیبانی: ۰۲۱ - ۴۳۹۰۰۰۰۰
-            </p>
-            <p className="text-slate-600 text-[0.8rem] font-semibold mt-[0.5rem]">
+          <div className="mt-[1rem] text-gray-600 text-[14px] font-semibold">
+            <p>تلفن پشتیبانی: ۰۲۱ - ۴۳۹۰۰۰۰۰</p>
+            <p className=" mt-[0.5rem]">
               دفتر پشتیبانی: اکباتان، نبش اتوبان لشگری، کوی بیمه، خیابان بیمه
               چهارم، بن‌بست گل‌ها، پلاک 1
             </p>
@@ -118,18 +115,18 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center w-[55%] h-20 text-gray-500">
-        <p className="text-[0.7rem]">
+      <div className="flex justify-between items-center w-[70%] h-20 text-gray-500">
+        <p className="text-[12px]">
           کلیه حقوق این سرویس (وب‌سایت و اپلیکیشن‌های موبایل) محفوظ و متعلق به
           شرکت سفرهای علی‌بابا می‌باشد. (نسخه 2.36.3)
         </p>
         <div className="flex">
-          <SiAparat className="text-[1.3rem] cursor-pointer" />
-          <SiLinkedin className="mr-5 text-[1.3rem] cursor-pointer" />
-          <SiInstagram className="mr-5 text-[1.3rem] cursor-pointer" />
-          <SiTwitter className="mr-5 text-[1.3rem] cursor-pointer" />
-          <SiYoutube className="mr-5 text-[1.3rem] cursor-pointer" />
-          <SiTelegram className="mr-5 text-[1.3rem] cursor-pointer" />
+          <SiAparat className="text-[25px] cursor-pointer" />
+          <SiLinkedin className="mr-6 text-[25px] cursor-pointer" />
+          <SiInstagram className="mr-6 text-[25px] cursor-pointer" />
+          <SiTwitter className="mr-6 text-[25px] cursor-pointer" />
+          <SiYoutube className="mr-6 text-[25px] cursor-pointer" />
+          <SiTelegram className="mr-6 text-[25px] cursor-pointer" />
         </div>
       </div>
     </div>

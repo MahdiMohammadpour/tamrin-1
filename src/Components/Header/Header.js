@@ -7,14 +7,14 @@ const Header = () => {
   return (
     <div
       className={
-        "h-14 w-full flex text-sm justify-center items-center shadow font-sans text-gray-500 font-medium"
+        "min-h-[64px] w-full flex sticky text-sm justify-center items-center shadow font-sans text-gray-500 font-medium text-[16px]"
       }
     >
-      <div className="flex mr-[7%] cursor-pointer">
+      <div className="flex ml-[20%] px-[2%] cursor-pointer">
         <img src={logo} className="w-36" />
-        <HeaderMenu styles="flex items-center"/>
+        <HeaderMenu styles="flex mr-[7%] pr-[2%] items-center"/>
       </div>
-      <div className="flex pl-[10%]">
+      <div className="flex pl-[1%]">
         <div className="flex hover:bg-slate-50 py-2 px-3 rounded-md cursor-pointer">
           <AiOutlineQuestionCircle className="text-xl ml-1" />
           <p>مرکز پشتیبانی آنلاین</p>
